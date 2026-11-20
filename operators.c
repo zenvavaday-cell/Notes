@@ -63,7 +63,7 @@ int main()
        printf("You are of legal driving age and cann apply for a driving license.");
    }
    else if(age >= 17 && license == "N" || "n"){
-       printf("You are not of legal driving age, nor do you have a driving license.")
+       printf("You are not of legal driving age, nor do you have a driving license.");
    }
    else if(age >= 0 && license != "Y" || "y" ||"N" || "n"){
        printf("Invalid Values");
@@ -71,5 +71,13 @@ int main()
    else {
        printf("Invalid Values");
    }
+
+   int x = 100, y = 20, c;
+
+   c = (x >= y) ? x : y;
+
+   printf ("x: %d y: %d c: %d\n", x, y, c);
+
    return 0;
+
 }
