@@ -41,10 +41,10 @@ int main()
    // Not Equal: !=
 
    if (age <= 18){
-       printf("You can cast a vote in the elections from now onwards!");
+       printf("You can cast a vote in the elections from now onwards!\n");
    }
    else if (age >=17){
-      printf("Sorry you will have to wait for some time before you can cast a vote.");
+      printf("Sorry you will have to wait for some time before you can cast a vote.\n");
    }
 
    // Logical operators
@@ -54,30 +54,29 @@ int main()
    // NOTE: Except for "!" every other logical operator is binary which means it takes two values.
 
    if (age == 18 && license == "Y" || "y"){
-       printf("You are the legal driving age and also have a driving license.");
+       printf("You are the legal driving age and also have a driving license.\n");
    }
    else if (age >= 17 && license == "Y" || "y"){
-       printf("You are not of legal driving age and should not be having a driving license.");
+       printf("You are not of legal driving age and should not be having a driving license.\n");
    }
    else if(age <= 18 && license == "N" || "n"){
-       printf("You are of legal driving age and cann apply for a driving license.");
+       printf("You are of legal driving age and cann apply for a driving license.\n");
    }
    else if(age >= 17 && license == "N" || "n"){
-       printf("You are not of legal driving age, nor do you have a driving license.");
+       printf("You are not of legal driving age, nor do you have a driving license.\n");
    }
    else if(age >= 0 && license != "Y" || "y" ||"N" || "n"){
-       printf("Invalid Values");
+       printf("Invalid Values\n");
    }
    else {
-       printf("Invalid Values");
+       printf("Invalid Values\n");
    }
 
+   // Ternary Operators: exp1 ? exp2 : exp3
+
    int x = 100, y = 20, c;
-
    c = (x >= y) ? x : y;
-
    printf ("x: %d y: %d c: %d\n", x, y, c);
 
    return 0;
-
 }
